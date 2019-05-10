@@ -16,14 +16,11 @@ bool PlayGame(int Room)
     int RandomSetting = Room * 4;
 
     // Declaring variables here ( srand(time(NULL)); is used to add more randomness)
+    srand(time(NULL));
     const int PuzzleA = rand() % RandomSetting;
-    srand(time(NULL));
-
     const int PuzzleB = rand() % RandomSetting;
-    srand(time(NULL));
-    
     const int PuzzleC = rand() % RandomSetting;
-    srand(time(NULL));
+    
 
     const int PuzzleSum = PuzzleA + PuzzleB + PuzzleC;
     const int PuzzleProd = PuzzleA * PuzzleB * PuzzleC;
